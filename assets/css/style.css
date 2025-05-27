@@ -52,6 +52,7 @@ a {
 
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 /* ============= header =========== */
@@ -318,4 +319,84 @@ a {
   background-color: var(--primary-color);
   color: white;
   cursor: pointer;
+}
+
+.popular .course-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.popular .count-tiem {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+
+.popular .count-tiem:hover {
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0px 18px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .count-tiem .thumb {
+  width: 100%;
+  height: 278px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
+
+.popular .count-tiem .info {
+  padding: 16px 22px 22px;
+}
+
+.popular .count-tiem .foot,
+.popular .count-tiem .rating,
+.popular .count-tiem .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .count-tiem .title a {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 167%; /* 166.667% */
+}
+
+.popular .rating .value {
+  margin-left: 6px;
+  color: #fea31b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%; /* 175% */
+}
+
+.popular .count-tiem .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 186%; /* 185.714% */
+}
+
+.popular .count-tiem .foot {
+  margin-top: 12px;
+}
+
+.popular .count-tiem .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 167%; /* 166.667% */
+}
+
+.popular .count-tiem .btn-book {
+  border: none;
+}
+
+.popular .count-tiem .btn-book:hover {
+  background: var(--primary-color);
 }
