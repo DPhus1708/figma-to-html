@@ -418,37 +418,28 @@ a {
 
 /* ============== feedback ============= */
 .feedback {
+  background: #2e2100;
   margin-top: 135px;
   padding: 96px 0;
-  background: #2e2100;
 }
 
 .feedback-item {
   display: flex;
 }
 
-.feedback-item .avatar {
+.feedback .feedback-item .avt {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.feedback-item .info .member-name {
-  margin-top: 18px;
+.feedback .feedback-item .name-menber {
   color: #f7f7f7;
   font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 142%; /* 141.667% */
-}
-
-.feedback-item .info .desc {
-  color: #bfbcb2;
-  font-family: Poppins;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 186%; /* 185.714% */
 }
 
 .feedback-item .dots {
@@ -458,8 +449,8 @@ a {
 }
 
 .feedback-item .dot {
-  height: 6px;
   width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #634700;
   cursor: pointer;
@@ -467,17 +458,23 @@ a {
 
 .feedback-item .dot.active {
   background: var(--primary-color);
-  cursor: default9;
+  cursor: default;
 }
 
-.feedback-item .content {
-  width: 66%;
-  /* margin-left: auto; */
+.feedback .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 186%; /* 185.714% */
 }
 
 .feedback-item {
   display: flex;
   justify-content: space-between;
+}
+.feedback-item .content {
+  width: 66%;
 }
 
 .feedback-item blockquote {
