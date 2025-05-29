@@ -467,7 +467,7 @@ a {
 
 .feedback-item .dot.active {
   background: var(--primary-color);
-  cursor: default9;
+  cursor: default;
 }
 
 .feedback-item .content {
